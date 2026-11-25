@@ -1,0 +1,974 @@
+# Русский корпоративный булшит — источник лексикона.
+#
+# Секции:
+#   nouns        — однословные существительные (род и формы берутся из OpenCorpora)
+#   adjectives  — однословные прилагательные (в именительном падеже, м.р.)
+#   verbs       — глаголы (вид и формы берутся из OpenCorpora)
+#   adverbs     — наречия
+#   indeclinable — несклоняемые транслитерации (одна форма на все падежи)
+#   phrases     — составные существительные: прилагательное + существительное и т.п.
+#   actors      — те, кто действует: подлежащие, для которых строится сказуемое
+#   titles      — должности
+#   departments — подразделения (всегда в родительном падеже после должности)
+#   loans       — леммы, которых нет в словаре: парадигма задана руками
+#
+# Ключи пишутся через подчёркивание: «рабочая_группа» -> «рабочая группа».
+
+nouns:
+  абстракция: abstraction
+  авторитет: authority
+  агент: agent
+  агрегация: aggregation
+  акселератор: accelerator
+  актуальность: relevance
+  альтернатива: alternative
+  амбиция: ambition
+  аналитика: analytics
+  архитектура: architecture
+  аутсорсинг: outsourcing
+  валидация: validation
+  веха: milestone
+  визуализация: visualization
+  воздействие: impact
+  воронка: funnel
+  выгода: benefit
+  гарантия: guarantee
+  горизонт: horizon
+  грейдер: grader
+  дашборд: dashboard
+  дедлайн: deadline
+  дефект: defect
+  дизайн: design
+  директор: director
+  дисциплина: discipline
+  доверие: trust
+  договор: contract
+  доход: revenue
+  драйвер: driver
+  доступность: accessibility
+  задача: task
+  заинтересованность: engagement
+  запас: buffer
+  иерархия: hierarchy
+  идея: idea
+  идентичность: identity
+  издержка: cost
+  импульс: impetus
+  инвестиция: investment
+  инфраструктура: infrastructure
+  инновация: innovation
+  инсайт: insight
+  интеграция: integration
+  интеракция: interaction
+  итерация: iteration
+  капитал: capital
+  карта: map
+  качество: quality
+  кейс: case
+  кластер: cluster
+  клиент: customer
+  команда: team
+  компетенция: competency
+  комплекс: complex
+  компонент: component
+  концепция: concept
+  конверсия: conversion
+  конкурент: competitor
+  конкуренция: competition
+  консалтинг: consulting
+  контейнер: container
+  контракт: contract
+  контроль: control
+  координация: coordination
+  корпорация: corporation
+  кооперация: cooperation
+  коэффициент: coefficient
+  культура: culture
+  курс: course
+  легенда: legend
+  логика: logic
+  маркетинг: marketing
+  мера: measure
+  место: place
+  методология: methodology
+  миссия: mission
+  мобильность: mobility
+  модель: model
+  момент: moment
+  мотивация: motivation
+  навык: skill
+  направление: direction
+  настройка: setting
+  неопределённость: uncertainty
+  ниша: niche
+  объект: object
+  объём: volume
+  опыт: experience
+  оптимизация: optimization
+  организация: organization
+  описание: description
+  основание: basis
+  ответственность: accountability
+  оценка: assessment
+  отрасль: industry
+  отчёт: report
+  партнёр: partner
+  переход: transition
+  перспектива: perspective
+  платформа: platform
+  площадка: venue
+  подход: approach
+  показатель: metric
+  политика: policy
+  портфель: portfolio
+  поток: stream
+  потенциал: potential
+  практика: practice
+  приоритет: priority
+  проблема: problem
+  программа: programme
+  пространство: space
+  проекция: projection
+  прозрачность: transparency
+  процесс: process
+  производство: production
+  прогноз: forecast
+  продуктивность: productivity
+  проект: project
+  прорыв: breakthrough
+  протокол: protocol
+  результат: result
+  решение: solution
+  ресурс: resource
+  риск: risk
+  роль: role
+  рынок: market
+  сценарий: scenario
+  система: system
+  скорость: speed
+  слой: layer
+  смена: shift
+  событие: event
+  сегмент: segment
+  сессия: session
+  синергия: synergy
+  специализация: specialization
+  способность: capability
+  спрос: demand
+  срок: timeline
+  стабильность: stability
+  стандарт: standard
+  стратегия: strategy
+  структура: structure
+  субподряд: subcontracting
+  сцена: scenario
+  тактика: tactics
+  технология: technology
+  тезис: thesis
+  темп: pace
+  тенденция: trend
+  товар: product
+  траектория: trajectory
+  трансформация: transformation
+  управление: management
+  устойчивость: sustainability
+  услуга: service
+  фактор: factor
+  фаза: phase
+  философия: philosophy
+  функция: function
+  характер: character
+  цель: objective
+  ценность: value
+  цена: price
+  цикл: cycle
+  цифровизация: digitalization
+  часть: part
+  шаг: step
+  эффект: effect
+  экономика: economics
+  экспертиза: expertise
+  эффективность: efficiency
+  артефакт: deliverable
+  вектор: vector
+  катализатор: catalyst
+  схема: scheme
+  партнёрство: partnership
+  первенство: mindshare
+  уровень: level
+  сервис: service
+  лояльность: loyalty
+  матрица: matrix
+  соглашение: agreement
+  база: base
+  предложение: proposition
+  поток: stream
+
+  # --- подлежащие ---
+  аналитик: analyst
+  бизнес: business
+  группа: group
+  инвестор: investor
+  комитет: committee
+  компания: company
+  лидер: leader
+  офис: office
+  подразделение: division
+  правление: board
+  совет: council
+  эксперт: expert
+  центр: center
+  блок: block
+  связь: connection
+  среда: environment
+  место: place
+  юнит: unit
+  компетенция: competency
+
+adjectives:
+  абсолютный: absolute
+  автономный: autonomous
+  адаптивный: adaptive
+  административный: administrative
+  адресный: targeted
+  активный: active
+  актуальный: relevant
+  глобальный: global
+  двусторонний: bilateral
+  дефицитный: scarce
+  диверсифицированный: diversified
+  динамичный: dynamic
+  долгосрочный: long-term
+  достижимый: achievable
+  доступный: accessible
+  доказательный: evidence-based
+  жизнеспособный: viable
+  заточенный: purpose-built
+  инвестиционный: investment
+  индивидуальный: individual
+  инновационный: innovative
+  интеллектуальный: intellectual
+  инфраструктурный: infrastructural
+  качественный: qualitative
+  комплексный: comprehensive
+  конкретный: concrete
+  корпоративный: corporate
+  краткосрочный: short-term
+  масштабируемый: scalable
+  многоуровневый: multi-level
+  накопительный: cumulative
+  натуральный: natural
+  независимый: independent
+  непрерывный: continuous
+  новаторский: groundbreaking
+  операционный: operational
+  оптимальный: optimal
+  организационный: organizational
+  ориентированный: oriented
+  перспективный: prospective
+  позитивный: positive
+  пользовательский: user-centric
+  практический: practical
+  приоритетный: priority
+  программный: software
+  прогнозируемый: predictable
+  прозрачный: transparent
+  профессиональный: professional
+  репутационный: reputational
+  результативный: result-driven
+  ростовой: growth
+  самостоятельный: self-sustained
+  масштабный: large-scale
+  современный: modern
+  специализированный: specialized
+  средний: mid-range
+  стабильный: stable
+  стратегический: strategic
+  структурированный: structured
+  тактический: tactical
+  технологический: technological
+  устойчивый: resilient
+  финансовый: financial
+  функциональный: functional
+  холистический: holistic
+  ценностный: value-driven
+  цифровой: digital
+  частный: private
+  эволюционный: evolutionary
+  экономический: economic
+  эффективный: effective
+  гибкий: flexible
+  конкурентный: competitive
+  локальный: local
+  международный: international
+  мобильный: mobile
+  мотивирующий: motivating
+  оперативный: operational
+  параллельный: parallel
+  прогнозный: forecast
+  прорывной: breakthrough
+  системный: systematic
+  согласованный: aligned
+  справедливый: fair
+  фактический: fact-based
+  целевой: targeted
+  числовой: quantitative
+  взаимный: mutual
+  виртуальный: virtual
+  гармоничный: harmonious
+  горизонтальный: horizontal
+  гуманный: humane
+  действенный: effective
+  дотошный: diligent
+  инклюзивный: inclusive
+  интуитивный: intuitive
+  креативный: creative
+  логичный: logical
+  органичный: organic
+  осознанный: conscious
+  плодотворный: fruitful
+  полноценный: full-scale
+  прицельный: purposeful
+  решительный: decisive
+  ретроспективный: retrospective
+  революционный: revolutionary
+  рискованный: risky
+  рутинный: routine
+  сбалансированный: balanced
+  сверхточный: hyper-precise
+  синхронный: synchronized
+  соразмерный: proportionate
+  суперфинный: super-fine
+  темповый: pace-driven
+  точечный: point-based
+  ускоренный: accelerated
+  ускорительный: accelerative
+  хаотичный: chaotic
+  экономный: frugal
+  яркий: stellar
+  наблюдательный: oversight
+  проектный: project
+  рабочий: working
+  обратный: feedback
+  слабый: weak
+  облачный: cloud-based
+  сквозной: end-to-end
+  общефирменный: enterprise-wide
+  клиентоориентированный: customer-centric
+  кросс_платформенный: cross-platform
+  кросс_функциональный: cross-functional
+  авангардный: bleeding-edge
+  изкоробочный: out-of-the-box
+  бесшовный: frictionless
+  липкий: sticky
+  командный: team-driven
+  дружественный: user-friendly
+  вирусный: viral
+  детальный: granular
+  мировой: world-class
+  пандемический: pandemic
+  ортогональный: orthogonal
+  магнитный: magnetic
+  взаимозаменяемый: fungible
+  эластичный: elastic
+  отличительный: distinctive
+  ресурсомаксимизирующий: resource-maximizing
+  ресурсопожирающий: resource-sucking
+  непротиворечивый: frictionless
+  стандартизированный: standardized
+  взаимосвязанный: interdependent
+  мультифункциональный: multifunctional
+  бесперебойный: seamless
+  одновременный: simultaneous
+  лучший: best
+  клиентский: customer
+  деловой: business
+  человеческий: human
+  новейший: next-generation
+  территориальный: cross-media
+  воспроизводимый: reproducible
+
+verbs:
+  актуализировать: actualize
+  адаптировать: adapt
+  адресовать: address
+  активировать: activate
+  анализировать: analyze
+  апробировать: validate
+  ассимилировать: assimilate
+  бенчмаркить: benchmark
+  брендировать: brand
+  верифицировать: verify
+  внедрять: deploy
+  вовлекать: engage
+  гармонизировать: harmonize
+  генерировать: generate
+  диверсифицировать: diversify
+  дозировать: allocate
+  достигать: achieve
+  задействовать: engage
+  закреплять: institutionalize
+  инвестировать: invest
+  инкорпорировать: incorporate
+  инсталлировать: install
+  интегрировать: integrate
+  итерировать: iterate
+  канализировать: channelize
+  капитализировать: capitalize
+  кластеризовать: cluster
+  кодифицировать: codify
+  коммерциализировать: commercialize
+  компенсировать: compensate
+  конкретизировать: concretize
+  консолидировать: consolidate
+  контейнеризировать: containerize
+  масштабировать: scale
+  материализовать: materialize
+  максимизировать: maximize
+  минимизировать: minimize
+  моделировать: model
+  модерировать: moderate
+  монетизировать: monetize
+  мультиплицировать: multiply
+  наращивать: beef up
+  насыщать: saturate
+  нивелировать: level
+  обновлять: refresh
+  обогащать: enrich
+  оптимизировать: optimize
+  оркестрировать: orchestrate
+  отслеживать: track
+  оценивать: assess
+  пересматривать: revisit
+  персонализировать: personalize
+  планировать: plan
+  позиционировать: position
+  повышать: elevate
+  прогнозировать: forecast
+  продвигать: promote
+  проектировать: design
+  провоцировать: provoke
+  прогрессировать: progress
+  прорабатывать: work out
+  противостоять: counter
+  радикализировать: radicalize
+  разворачивать: roll out
+  разрабатывать: develop
+  ранжировать: rank
+  рефлексировать: reflect
+  рефреймить: reframe
+  реинвестировать: reinvest
+  реконфигурировать: reconfigure
+  реструктурировать: restructure
+  решать: address
+  рутинизировать: routinize
+  сбалансировать: balance
+  совершенствовать: improve
+  стандартизировать: standardize
+  стратегировать: strategize
+  тактизировать: tacticize
+  трансформировать: transform
+  ускорять: accelerate
+  упрощать: simplify
+  усовершенствовать: perfect
+  хеджировать: hedge
+  централизовать: centralize
+  эксплуатировать: exploit
+  эскалировать: escalate
+  купировать: curb
+  локализовать: localize
+  маршрутизировать: route
+  переоценивать: re-evaluate
+  покупать: buy
+  продавать: sell
+  реализовывать: realize
+  рефакторить: refactor
+  скарперить: sharpen
+  сокращать: cut
+  снимать: remove
+  стимулировать: stimulate
+  страховать: hedge
+  углублять: deepen
+  удерживать: retain
+  укреплять: strengthen
+  ужесточать: tighten
+  замерять: measure
+  закупорить: insource
+  имплементировать: implement
+  пересобирать: reassemble
+  приоритизировать: prioritize
+  профилировать: profile
+  переформатировать: reformat
+  переосмыслить: rethink
+  пересмотреть: revisit
+  унифицировать: unify
+  переработать: rework
+  модернизировать: modernize
+  зафиксировать: fix
+  переиспользовать: reuse
+  визуализировать: visualize
+  переоценить: re-value
+  стандартизовать: standardize
+  администрировать: administrate
+  концептуализировать: conceptualize
+  распространять: disseminate
+  инкубировать: incubate
+  синтезировать: synthesize
+  утилизировать: utilize
+  высвободить: unleash
+  выращивать: nurture
+  переориентировать: reorient
+  рефокусировать: refocus
+  катализировать: catalyse
+
+# Глаголы, которые требуют родительного падежа: «достигать цели»,
+# а не «достигать цель».
+genitive_verbs:
+  достигать: reach
+  требовать: require
+  избегать: avoid
+  лишиться: lose
+  касаться: touch
+  превосходить: exceed
+  качать: rock
+
+adverbs:
+  адресно: targeted
+  активно: proactively
+  амбициозно: ambitiously
+  аналитически: analytically
+  асимметрично: asymmetrically
+  безоговорочно: unequivocally
+  безопасно: safely
+  быстро: fast
+  вероятно: probably
+  вдохновенно: inspiringly
+  взаимно: mutually
+  виртуально: virtually
+  гармонично: harmoniously
+  глобально: globally
+  горизонтально: horizontally
+  действенно: effectively
+  динамично: dynamically
+  дисциплинированно: diligently
+  дотошно: meticulously
+  емко: succinctly
+  значимо: meaningfully
+  инклюзивно: inclusively
+  инновационно: innovatively
+  интуитивно: intuitively
+  качественно: qualitatively
+  количественно: quantitatively
+  комплексно: comprehensively
+  креативно: creatively
+  логично: logically
+  методологически: methodically
+  мгновенно: instantly
+  мобильно: mobile
+  нацеленно: purposefully
+  непрерывно: continuously
+  нетривиально: non-trivially
+  новаторски: pioneering
+  оперативно: promptly
+  оптимально: optimally
+  органично: organically
+  параллельно: in parallel
+  перспективно: prospectively
+  повсеместно: pervasively
+  плодотворно: fruitfully
+  подробно: in depth
+  полноценно: fully
+  практично: pragmatically
+  предиктивно: predictively
+  прицельно: surgically
+  прогрессивно: progressively
+  прозрачно: transparently
+  радикально: radically
+  решительно: decisively
+  результативно: resultantly
+  ретроспективно: retrospectively
+  революционно: revolutionarily
+  рискованно: riskily
+  рутинно: routinely
+  сбалансированно: in a balanced way
+  сверхточно: ultra-precisely
+  синхронно: synchronously
+  соразмерно: proportionately
+  стратегически: strategically
+  срочно: urgently
+  тактически: tactically
+  точечно: point-wise
+  трансформационно: transformationally
+  устойчиво: sustainably
+  ускоренно: at speed
+  целенаправленно: purposefully
+  шире: wider
+  широко: broadly
+  эффективно: effectively
+  экономно: frugally
+  ярко: brilliantly
+  ширше: faster
+  кратно: exponentially
+  итеративно: iteratively
+  каскадно: cascadingly
+  холистически: holistically
+  синергетически: synergistically
+  обоснованно: rationally
+  предметно: substantively
+  синхронно_в_режиме: in sync
+  на_опережение: ahead of the curve
+
+# Несклоняемые транслитерации: одна форма на все падежи и числа.
+indeclinable:
+  митинг: meeting
+  митап: meetup
+  скейл: scale
+  хайп: hype
+  булшит: bullshit
+  перформанс: performance
+  ретеншн: retention
+  коммитмент: commitment
+  скиллы: skills
+  сторителлинг: storytelling
+  трекшн: traction
+  тимлид: teamlead
+  обджектив: objective
+  левередж: leverage
+  скоуп: scope
+  форвард: forward
+  факап: fuck-up
+  фейл: fail
+  фоллоу-ап: follow-up
+  питч: pitch
+  лонч: launch
+  праймари: primary
+  питчинг: pitching
+  plug-and-play: plug-and-play
+  скрам: scrum
+  спринт: sprint
+  воркшоп: workshop
+  ретро: retro
+  дата: data
+  стек: stack
+  пайплайн: pipeline
+  репозиторий: repository
+  баззворд: buzzword
+  бутстреппинг: bootstrapping
+  гайз: guys
+  ишью: issue
+  капасити: capacitate
+  консерн: concern
+  марджин: margin
+  мисконцепция: misconception
+  деплой: deployment
+  визионер: visionary
+  косты: crutches
+  бизнес-юнит: business unit
+  совет директоров: board of directors
+
+# Составные существительные. kind: adj | noun | decl.
+# У существительного можно задать case — тогда падеж не берётся из слота.
+phrases:
+  лучшие_практики:
+    en: best practices
+    parts:
+      - {kind: adj, lemma: лучший}
+      - {kind: noun, lemma: практика}
+  инфраструктура_данных:
+    en: data infrastructure
+    parts:
+      - {kind: noun, lemma: инфраструктура}
+      - {kind: noun, lemma: данные, case: gen}
+  поток_ценности:
+    en: value stream
+    parts:
+      - {kind: noun, lemma: поток}
+      - {kind: noun, lemma: ценность, case: gen}
+  модель_бизнеса:
+    en: business model
+    parts:
+      - {kind: noun, lemma: модель}
+      - {kind: noun, lemma: бизнес, case: gen}
+  система_мотивации:
+    en: incentive system
+    parts:
+      - {kind: noun, lemma: система}
+      - {kind: noun, lemma: мотивация, case: gen}
+  портфель_инвестиций:
+    en: investment portfolio
+    parts:
+      - {kind: noun, lemma: портфель}
+      - {kind: noun, lemma: инвестиция, case: gen, num: pl}
+  оценка_рисков:
+    en: risk assessment
+    parts:
+      - {kind: noun, lemma: оценка}
+      - {kind: noun, lemma: риск, case: gen, num: pl}
+  матрица_ответственности:
+    en: responsibility matrix
+    parts:
+      - {kind: noun, lemma: матрица}
+      - {kind: noun, lemma: ответственность, case: gen}
+  соглашение_уровня_сервиса:
+    en: service level agreement
+    parts:
+      - {kind: noun, lemma: соглашение}
+      - {kind: noun, lemma: уровень, case: gen}
+      - {kind: noun, lemma: сервис, case: gen}
+  программа_лояльности:
+    en: loyalty programme
+    parts:
+      - {kind: noun, lemma: программа}
+      - {kind: noun, lemma: лояльность, case: gen}
+  клиентская_база:
+    en: customer base
+    parts:
+      - {kind: adj, lemma: клиентский}
+      - {kind: noun, lemma: база}
+  цифровая_трансформация:
+    en: digital transformation
+    parts:
+      - {kind: adj, lemma: цифровой}
+      - {kind: noun, lemma: трансформация}
+  клиентоориентированный_подход:
+    en: customer-centric approach
+    parts:
+      - {kind: adj, lemma: клиентоориентированный}
+      - {kind: noun, lemma: подход}
+  деловая_культура:
+    en: business culture
+    parts:
+      - {kind: adj, lemma: деловой}
+      - {kind: noun, lemma: культура}
+  операционная_эффективность:
+    en: operational efficiency
+    parts:
+      - {kind: adj, lemma: операционный}
+      - {kind: noun, lemma: эффективность}
+  стратегическая_сессия:
+    en: strategic session
+    parts:
+      - {kind: adj, lemma: стратегический}
+      - {kind: noun, lemma: сессия}
+  человеческий_капитал:
+    en: human capital
+    parts:
+      - {kind: adj, lemma: человеческий}
+      - {kind: noun, lemma: капитал}
+  интеллектуальный_капитал:
+    en: intellectual capital
+    parts:
+      - {kind: adj, lemma: интеллектуальный}
+      - {kind: noun, lemma: капитал}
+  корпоративная_стратегия:
+    en: corporate strategy
+    parts:
+      - {kind: adj, lemma: корпоративный}
+      - {kind: noun, lemma: стратегия}
+  операционная_модель:
+    en: operating model
+    parts:
+      - {kind: adj, lemma: операционный}
+      - {kind: noun, lemma: модель}
+  ценностное_предложение:
+    en: value proposition
+    parts:
+      - {kind: adj, lemma: ценностный}
+      - {kind: noun, lemma: предложение}
+
+  наблюдательный_совет:
+    en: oversight board
+    parts:
+      - {kind: adj, lemma: наблюдательный}
+      - {kind: noun, lemma: совет}
+  рабочая_группа:
+    en: working group
+    parts:
+      - {kind: adj, lemma: рабочий}
+      - {kind: noun, lemma: группа}
+  проектный_офис:
+    en: project office
+    parts:
+      - {kind: adj, lemma: проектный}
+      - {kind: noun, lemma: офис}
+  функциональный_блок:
+    en: functional unit
+    parts:
+      - {kind: adj, lemma: функциональный}
+      - {kind: noun, lemma: блок}
+  центр_компетенций:
+    en: center of excellence
+    parts:
+      - {kind: noun, lemma: центр}
+      - {kind: noun, lemma: компетенция, case: gen}
+  офис_трансформации:
+    en: transformation office
+    parts:
+      - {kind: noun, lemma: офис}
+      - {kind: noun, lemma: трансформация, case: gen}
+  обратная_связь:
+    en: feedback
+    parts:
+      - {kind: adj, lemma: обратный}
+      - {kind: noun, lemma: связь}
+  рабочая_среда:
+    en: workplace
+    parts:
+      - {kind: adj, lemma: рабочий}
+      - {kind: noun, lemma: среда}
+  слабое_место:
+    en: weakness
+    parts:
+      - {kind: adj, lemma: слабый}
+      - {kind: noun, lemma: место}
+
+# Подлежащие: кто действует. Сказуемое строится под них.
+actors:
+  committee:
+    - {noun: комитет}
+    - {noun: совет}
+    - {phrase: наблюдательный_совет}
+    - {decl: совет директоров}
+  team:
+    - {noun: команда}
+    - {noun: подразделение}
+    - {phrase: рабочая_группа}
+    - {phrase: функциональный_блок}
+  office:
+    - {phrase: проектный_офис}
+    - {phrase: офис_трансформации}
+    - {phrase: центр_компетенций}
+  people:
+    - {noun: эксперт}
+    - {noun: аналитик}
+    - {noun: лидер}
+    - {noun: инвестор}
+    - {noun: клиент}
+    - {noun: партнёр}
+  market:
+    - {noun: рынок}
+    - {noun: отрасль}
+    - {noun: сегмент}
+    - {noun: бизнес}
+    - {noun: компания}
+    - {noun: организация}
+
+# Должности: за должностью всегда идёт родительный падеж.
+titles:
+  - {ru: генеральный_директор, en: "General President"}
+  - {ru: исполнительный_директор, en: "Executive Director"}
+  - {ru: директор, en: "Director"}
+  - {ru: вице-президент, en: "Vice President"}
+  - {ru: глава, en: "Head"}
+  - {ru: руководитель_направления, en: "Head of"}
+  - {ru: координатор, en: "Coordinator"}
+  - {ru: специалист, en: "Specialist"}
+  - {ru: эксперт, en: "Expert"}
+
+# Подразделения — всегда в родительном падеже после должности.
+departments:
+  стратегического_планирования: strategic planning
+  цифровой_трансформации: digital transformation
+  развития_продаж: sales development
+  управления_персоналом: human resources
+  операционного_управления: operations management
+  корпоративных_коммуникаций: corporate communications
+  качества: quality
+  финансов: finance
+  клиентского_опыта: customer experience
+  продуктовой_разработки: product development
+  международного_развития: international development
+  информационной_безопасности: information security
+  аналитики_и_данных: analytics and data
+  закупок: procurement
+  стратегических_коммуникаций: strategic communications
+  логистики: logistics
+  разработки: development
+
+# Существительные, которые в русском бывают только во множественном числе.
+plural_only:
+  затраты: costs
+  данные: data
+
+# Эталоны для ручных лемм: в общий пул не попадают.
+templates:
+  хороший: good
+
+# Леммы, которых нет в OpenCorpora: парадигма задана руками и проверяется
+# round-trip'ом через анализатор.
+loans:
+  закоммититься:
+    en: commit
+    forms:
+      inf: закоммититься
+      ger: закоммитясь
+      pres_1sg: закоммичусь
+      pres_2sg: закоммитишься
+      pres_3sg: закоммитится
+      pres_1pl: закоммитимся
+      pres_2pl: закоммититесь
+      pres_3pl: закоммитятся
+      past_m: закоммитился
+      past_f: закоммитилась
+      past_n: закоммитилось
+      past_pl: закоммитились
+  капасити:
+    en: capacitate
+    forms:
+      inf: капасити
+      ger: капаситя
+      pres_1sg: капасичу
+      pres_2sg: капаситишь
+      pres_3sg: капаситит
+      pres_1pl: капаситим
+      pres_2pl: капаситите
+      pres_3pl: капаситят
+      past_m: капаситил
+      past_f: капаситила
+      past_n: капаситило
+      past_pl: капаситили
+  # «Бэклог» в словаре есть только в виде падежных форм другого слова —
+  # парадигму задаём руками.
+  бэклог:
+    en: backlog
+    kind: noun
+    gender: m
+    forms:
+      nom_sg: бэклог
+      gen_sg: бэклога
+      dat_sg: бэклогу
+      acc_sg: бэклог
+      ins_sg: бэклогом
+      prep_sg: бэклоге
+      nom_pl: бэклоги
+      gen_pl: бэклогов
+      dat_pl: бэклогам
+      acc_pl: бэклоги
+      ins_pl: бэклогами
+      prep_pl: бэклогах
+
+  # «Форварднуть» — сленговое «переслать дальше», транслитерация глагола.
+  форварднуть:
+    en: to forward
+    forms:
+      inf: форварднуть
+      ger: форварднув
+      pres_1sg: форвардну
+      pres_2sg: форварднёшь
+      pres_3sg: форварднёт
+      pres_1pl: форварднём
+      pres_2pl: форварднёте
+      pres_3pl: форварднут
+      past_m: форварднул
+      past_f: форварднула
+      past_n: форварднуло
+      past_pl: форварднули
+
+  # «Ширший» — значит «быстрее», а не «шире». Парадигма не выдумана:
+  # берётся у настоящего прилагательного «синий» и подставляется основа.
+  ширший:
+    en: faster
+    kind: adjective
+    template: хороший
+    from: хорош
+    to: ширш
