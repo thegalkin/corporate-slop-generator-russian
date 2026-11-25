@@ -1,0 +1,27 @@
+Third-party notices
+==================
+
+Морфологические таблицы форм
+-----------------------------
+
+internal/lexicon/data/lexicon.json собраны из словаря OpenCorpora
+(https://opencorpora.ru), лицензия CC-BY-SA 3.0. При распространении
+производных лексиконов укажите OpenCorpora как источник.
+
+Пакет pymorphy3 (MIT) используется только на этапе сборки словаря и при
+проверке грамматики — в рантайме бинарника его нет.
+
+Оригинальный генератор
+-----------------------
+
+Алгоритм изначально написан Gautier de Montmollin для проекта Corporate
+Bullshit Generator (https://github.com/zertovitch/cbsg), MIT.
+
+Python-реализация (https://github.com/bpgs/corporate_bullshit, GPL-3.0) и
+Python-реализация (https://github.com/franciscouzo/corporate_bullshit,
+GPL-3.0) использованы как образец поведения генератора: состав предложений,
+связки, наборы ролей. Код не копировался, словари не переносились.
+
+Английский список терминов для перевода взят из словаря оригинала
+(zertovitch/cbsg, MIT) и из buzzword-списка проекта
+sameerkumar18/corporate-bs-generator-api (BSD-3-Clause).

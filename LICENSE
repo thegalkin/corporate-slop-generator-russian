@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Таблицы морфологических форм (internal/lexicon/data/lexicon.json) собраны
-из словаря OpenCorpora (https://opencorpora.ru), лицензия CC-BY-SA 3.0.
-
-Алгоритм генератора изначально написан Gautier de Montmollin для проекта
-Corporate Bullshit Generator (https://github.com/zertovitch/cbsg), MIT.
-Python-реализация (https://github.com/bpgs/corporate_bullshit, GPL-3.0)
-использована как образец поведения, код не копировался.
