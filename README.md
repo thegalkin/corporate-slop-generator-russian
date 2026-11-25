@@ -79,6 +79,12 @@ make build          # бинарник в bin/cbsg
 make run            # пять предложений
 ```
 
+Поставить в `~/.local/bin` (обычно уже в PATH) — одной командой:
+
+```bash
+make install        # -> ~/.local/bin/cbsg
+```
+
 Или без make:
 
 ```bash

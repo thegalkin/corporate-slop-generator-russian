@@ -1,7 +1,7 @@
 BIN := bin/cbsg
 PY := .venv/bin/python
 
-.PHONY: all build test check lexicon run clean venv
+.PHONY: all build test check lexicon run clean venv install uninstall
 
 all: build
 
@@ -11,6 +11,14 @@ venv:
 
 build:
 	go build -o $(BIN) ./cmd/cbsg
+
+# поставить в ~/.local/bin (он обычно уже в PATH)
+install: build
+	install -Dm755 $(BIN) $(HOME)/.local/bin/cbsg
+	@echo "установлено: $$(command -v cbsg)"
+
+uninstall:
+	rm -f $(HOME)/.local/bin/cbsg
 
 test:
 	go test ./...
